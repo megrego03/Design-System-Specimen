@@ -43,10 +43,12 @@ textarea {
 
     --color-action:var(--color-blue);
     --color-action-hover: var(--color-hover);
+    --color-on-action: var(--color-white);
     --color-accent:var(--color-red);
     --color-success:var(--color-green);
     --color-warm: var(--color-terracotta);
     --color-focus:var(--color-red);
+    
 
     --space-1: 0.25rem;
     --space-2: 0.5rem;
@@ -169,6 +171,7 @@ p {
 
     --color-action: #E7A57A;
     --color-action-hover: #F0BC98;
+    --color-on-action: #222222; 
     --color-accent: #F06A82;
     --color-success: #8BAE58;
     --color-warm: #D99A72;
@@ -210,4 +213,60 @@ p {
 
 code {
     font-family: Consolas, "Courier New", monospace;
+}
+
+a {
+    color: var(--color-action);
+    text-decoration-thickness:  0.1rem;
+    text-underline-offset: 0.15rem;
+}
+
+a:hover {
+    color: var(--color-action-hover);
+}
+
+.button{
+    display: inline-block;
+    padding: var(--space-2) var(--space-3);
+    font: inherit;
+    font-weight: 700;
+    border: 2px solid transparent;
+    border-radius: var(--radius-small);
+    cursor: pointer;
+}
+
+.button-primary {
+    color: var(--color-on-action);
+    background-color: var(--color-action); 
+    border-color: var(--color-action);
+}
+
+.button-primary:hover {
+    background-color: var(--color-action-hover);
+    border-color: var(--color-action-hover);
+}
+
+.button-secondary {
+    color: var(--color-action);
+    background-color: transparent;
+    border-color: var(--color-action);
+}
+
+.button-secondary:hover {
+    color:var(--color-white);
+    background-color: var(--color-action);
+}
+
+:focus-visible {
+    outline: 3px solid var(--color-focus);
+    outline-offset: 3px;
+}
+
+.button:active {
+    transform: translateY(1px);
+}
+
+.button:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
 }
