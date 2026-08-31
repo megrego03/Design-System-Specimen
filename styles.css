@@ -173,5 +173,12 @@ p {
     --color-success: #8BAE58;
     --color-warm: #D99A72;
     --color-focus: #F06A82;
+}
 
+.theme-demo {
+    padding: var(--space-4);
+    color: var(--color-text);
+    background-color: var(--color-background);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-medium);
 }
