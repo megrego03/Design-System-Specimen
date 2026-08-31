@@ -159,3 +159,19 @@ p {
 .swatch-green {
     background-color:var(--color-green);
 }
+
+.theme-alt {
+    --color-text: #F7F5F2;
+    --color-muted: #D8D2CD;
+    --color-background: #282421;
+    --color-surface: #3A3430;
+    --color-border: #756B65;
+
+    --color-action: #E7A57A;
+    --color-action-hover: #F0BC98;
+    --color-accent: #F06A82;
+    --color-success: #8BAE58;
+    --color-warm: #D99A72;
+    --color-focus: #F06A82;
+
+}
