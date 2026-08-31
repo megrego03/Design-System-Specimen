@@ -16,10 +16,119 @@
         <main>
             <section id="foundation">
                 <h2>S1 - Foundation and Reset</h2>
+
+                <p>This project uses a selective reset that removes only browser defaults that interfere with predictable layout while preserving useful native behaviors and interactions.</p>
+                <h3>Box Sizing</h3>
+                <p>
+                    Border-box sizing is applied globally so padding and borders are included within an element's declared dimensions.
+                </p>
+
+                <h3>Body Margin</h3>
+                <p>
+                    The browser's default body margin is removed so page spacing is controlled consistently through design-system spacing tokens.
+                </p>
+
+                <h3>Responsive Media</h3>
+                <p>
+                    Images use a maximum width of 100% to prevent them from overflowing their
+                    containers.
+                </p>
+
+                <h3>Form Typography</h3>
+                <p>
+                    Form controls inherit the surrounding font so controls remain visually
+                    consistent with the typography system.
+                </p>
+
+                <h3>Intentionally Preserved Defaults</h3>
+                <p>
+                    Native focus indicators and semantic control behavior are not globally
+                    removed. Custom focus styling is added later without eliminating keyboard
+                    visibility.
+                </p>
             </section>
             
             <section id="tokens">
                 <h2>S2 - Token Inventory</h2>
+
+                <p>
+                    Global custom properties define reusable foundation values and semantic roles. Components consume semantic tokens instead of repeating raw values. 
+                </p>
+
+                <h3>Color Tokens</h3>
+
+                <div class="token-grid">
+                    <div class="token-card">
+                        <div class="color-swatch swatch-red"></div>
+                        <strong>--color-red</strong>
+                        <code>#CD2949</code>
+                        <p>Brand Accent and Emphasis</p>
+                    </div>
+
+                <div class="token-grid">
+                    <div class="token-card">
+                        <div class="color-swatch swatch-blue"></div>
+                        <strong>--color-blue</strong>
+                        <code>#2D6384</code>
+                        <p>Primary Interaction and Action Color</p>
+                    </div>    
+
+                <div class="token-grid">
+                    <div class="token-card">
+                        <div class="color-swatch swatch-taupe"></div>
+                        <strong>--color-taupe</strong>
+                        <code>#635A54</code>
+                        <p> Muted Text and Secondary Neutral Emphasis</p>
+                    </div>   
+
+                <div class="token-grid">
+                    <div class="token-card">
+                        <div class="color-swatch swatch-terracotta"></div>
+                        <strong>--color-terracotta</strong>
+                        <code>#C78257</code>
+                        <p>Warm Decorative Surfaces and Callouts</p>
+                    </div>  
+
+                <div class="token-grid">
+                    <div class="token-card">
+                        <div class="color-swatch swatch-green"></div>
+                        <strong>--color-green</strong>
+                        <code>#4C6B22</code>
+                        <p>Positive and Success-Related Communication</p>
+                    </div>  
+
+                </div>
+            </section>
+            
+                <h3>Spacing Tokens</h3>
+                <p>
+                    <code>--space-1: 0.25rem</code><br>
+                    <code>--space-2: 0.5rem</code><br>
+                    <code>--space-3: 1rem</code><br>
+                    <code>--space-4: 1.5rem</code><br>
+                    <code>--space-5: 2rem</code><br>
+                    <code>--space-6: 3rem</code><br>
+                </p>
+
+                <h3>Sizing and Measure Tokens</h3>
+                <p> 
+                    <code>--measure-text: 65ch</code> limits prose to a readable line length.
+                </p>
+
+                <p>--measure-page: 75rem</p> prevents the overall specimen from becoming excessively wide on large screens. </p>
+
+                <h3>Radius Tokens</h3>
+
+                <p>
+                    <code>--radius-small: 0.25rem</code><br>
+                    <code>--radius-medium: 0.5rem</code>
+                </p>
+
+                <h2>Elevation Tokens</h2>
+
+                <p>
+                    <code>--shadow-small</code> provides subtle separation. 
+                </p>
             </section>
 
             <section id="typography">
