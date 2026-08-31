@@ -293,6 +293,8 @@ a:hover {
 .media-placeholder {
     display:grid;
     place-items: center;
+    width: 100%;
+    max-width: 40rem;
     aspect-ratio: 16 / 9;
     margin-bottom: var(--space-3);
     color: var(--color-text);
